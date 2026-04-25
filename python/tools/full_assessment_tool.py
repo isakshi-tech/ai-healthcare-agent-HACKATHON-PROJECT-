@@ -7,7 +7,7 @@ from fhir_utilities import get_patient_id_if_context_exists
 from mcp_utilities import create_text_response
 from tools.patient_vitals_tool import get_patient_vitals
 from tools.patient_vitals_trend_tool import get_vitals_trend
-from tools.calculate_news2_tool import calculate_news2
+
 from tools.patient_risk_level_tool import get_risk_level
 from tools.patient_medications_tool import get_medications
 from tools.drug_food_interaction_tool import get_drug_food_interactions

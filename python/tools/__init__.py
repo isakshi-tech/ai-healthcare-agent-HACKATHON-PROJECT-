@@ -1,4 +1,4 @@
-from tools.calculate_news2_tool import calculate_news2
+
 from tools.drug_food_interaction_tool import get_drug_food_interactions
 from tools.full_assessment_tool import full_assessment
 from tools.generate_alert_tool import generate_alert

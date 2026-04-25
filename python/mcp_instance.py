@@ -2,7 +2,7 @@ from mcp.server.fastmcp import FastMCP
 from tools.patient_age_tool import get_patient_age
 from tools.patient_allergies_tool import get_patient_allergies
 from tools.patient_id_tool import find_patient_id
-from tools.calculate_news2_tool import calculate_news2
+
 from tools.drug_food_interaction_tool import get_drug_food_interactions
 from tools.full_assessment_tool import full_assessment
 from tools.generate_alert_tool import generate_alert
@@ -30,7 +30,7 @@ mcp._mcp_server.get_capabilities = _patched_get_capabilities
 mcp.tool(name="GetPatientAge", description="Gets the age of a patient.")(get_patient_age)
 mcp.tool(name="GetPatientAllergies", description="Gets the known allergies of a patient.")(get_patient_allergies)
 mcp.tool(name="FindPatientId", description="Finds a patient id given a first name and last name")(find_patient_id)
-mcp.tool(name="CalculateNEWS2", description="Calculates the NEWS2 score for a patient based on vital signs.")(calculate_news2)
+
 mcp.tool(name="GetDrugFoodInteractions", description="Gets potential drug-food interactions for a patient's medications.")(get_drug_food_interactions)
 mcp.tool(name="FullAssessment", description="Performs a full assessment of the patient including vitals, trends, NEWS2, risk level, medications, interactions, alerts, diagnoses, and nurse notes.")(full_assessment)
 mcp.tool(name="GenerateAlert", description="Generates an alert based on patient data.")(generate_alert)
